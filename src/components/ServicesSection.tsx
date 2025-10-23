@@ -53,7 +53,7 @@ const ServicesSection = () => {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
           <span className="text-gold font-semibold text-sm uppercase tracking-wider">Nossos Serviços</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
             Excelência em Cada Detalhe
@@ -69,7 +69,8 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:shadow-elegant transition-smooth group cursor-pointer border-border"
+              className="overflow-hidden hover:shadow-elegant hover:shadow-gold hover:scale-105 transition-smooth group cursor-pointer border-border animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               {service.image && (
                 <div className="relative h-48 overflow-hidden">
@@ -83,10 +84,10 @@ const ServicesSection = () => {
               )}
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 gradient-gold rounded-lg flex items-center justify-center mr-4">
-                    <service.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 gradient-gold rounded-lg flex items-center justify-center mr-4 group-hover:animate-glow">
+                    <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-smooth" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-gold transition-smooth">{service.title}</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 <ul className="space-y-2">

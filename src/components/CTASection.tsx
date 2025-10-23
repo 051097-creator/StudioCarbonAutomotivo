@@ -11,23 +11,23 @@ const CTASection = () => {
   return (
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-elegant overflow-hidden">
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-elegant overflow-hidden hover:shadow-gold transition-smooth animate-scale-in">
           <div className="p-12 md:p-16 text-center">
             {/* Content */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up">
               Pronto para Transformar Seu Veículo?
             </h2>
-            <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
               Agende agora seu serviço e descubra por que somos referência em 
               estética automotiva premium. Garantia de qualidade e satisfação!
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
               <Link to="/agendamento">
                 <Button
                   size="lg"
-                  className="gradient-gold text-primary font-bold text-lg px-8 py-6 shadow-gold hover:opacity-90 transition-smooth"
+                  className="gradient-gold text-primary font-bold text-lg px-8 py-6 shadow-gold hover:opacity-90 hover:scale-105 transition-smooth"
                 >
                   <Calendar className="mr-2 w-5 h-5" />
                   Agendar Online
@@ -42,7 +42,7 @@ const CTASection = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-semibold text-lg px-8 py-6"
+                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:scale-105 font-semibold text-lg px-8 py-6 transition-smooth"
                 >
                   <MessageCircle className="mr-2 w-5 h-5" />
                   WhatsApp

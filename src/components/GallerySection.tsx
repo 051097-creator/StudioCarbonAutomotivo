@@ -7,7 +7,7 @@ const GallerySection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
           <span className="text-gold font-semibold text-sm uppercase tracking-wider">Resultados Reais</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
             Transformações que Impressionam
@@ -19,12 +19,12 @@ const GallerySection = () => {
         </div>
 
         {/* Featured Before/After */}
-        <div className="max-w-5xl mx-auto mb-12">
-          <div className="relative rounded-2xl overflow-hidden shadow-elegant group">
+        <div className="max-w-5xl mx-auto mb-12 animate-scale-in">
+          <div className="relative rounded-2xl overflow-hidden shadow-elegant group hover:shadow-gold transition-smooth">
             <img
               src={beforeAfter}
               alt="Transformação de veículo - antes e depois do detalhamento profissional"
-              className="w-full h-auto"
+              className="w-full h-auto group-hover:scale-105 transition-smooth"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-smooth"></div>
             
@@ -40,19 +40,19 @@ const GallerySection = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto">
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up hover:scale-110 transition-smooth cursor-default" style={{ animationDelay: "0.2s" }}>
             <div className="text-4xl md:text-5xl font-bold text-gradient-gold mb-2">+5.000</div>
             <div className="text-sm text-muted-foreground">Veículos Atendidos</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up hover:scale-110 transition-smooth cursor-default" style={{ animationDelay: "0.4s" }}>
             <div className="text-4xl md:text-5xl font-bold text-gradient-gold mb-2">98%</div>
             <div className="text-sm text-muted-foreground">Clientes Satisfeitos</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up hover:scale-110 transition-smooth cursor-default" style={{ animationDelay: "0.6s" }}>
             <div className="text-4xl md:text-5xl font-bold text-gradient-gold mb-2">+10</div>
             <div className="text-sm text-muted-foreground">Anos de Experiência</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up hover:scale-110 transition-smooth cursor-default" style={{ animationDelay: "0.8s" }}>
             <div className="text-4xl md:text-5xl font-bold text-gradient-gold mb-2">100%</div>
             <div className="text-sm text-muted-foreground">Garantia de Qualidade</div>
           </div>

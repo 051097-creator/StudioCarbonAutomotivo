@@ -36,13 +36,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary-foreground">EA</span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="w-10 h-10 gradient-gold rounded-lg flex items-center justify-center shadow-gold transition-smooth group-hover:animate-glow">
+              <span className="text-xl font-bold text-primary">SC</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-foreground">Estética</span>
-              <span className="text-xs text-gradient-gold font-semibold">Automotiva Premium</span>
+              <span className="font-bold text-base text-foreground">StudioCarbon</span>
+              <span className="text-xs text-gradient-gold font-semibold tracking-wide">automotivo</span>
             </div>
           </Link>
 
